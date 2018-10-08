@@ -1,0 +1,129 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.husheng.riji.husshen2">
+
+    <!-- 添加必要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 短信验证登陆功能需要添加次权限来自动填充验证码，用不到可以去掉 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+
+
+
+
+
+    <application
+        android:name="com.mob.MobApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/i"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/i"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".ui.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.MainActivity"></activity>
+        <activity android:name=".ui.MessageActivity" android:label="message activity"></activity>
+        <activity android:name=".ui.SearchWordsActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.SearchActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.OfficialNoticeActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.AboutPeanutActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.FeedbackActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.CommonProblemActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.MyCollectionActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.ContactCustomerServiceActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.NoviceIntroductionActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.IncomeActivity" ></activity>
+        <activity android:name=".ui.OrderActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.FansActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.InvitationActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.PeanutVipActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.SettingActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.LoginActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.MessageNoticeActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.WithdrawDepositActivity" android:label="search activity"></activity>
+
+        <activity android:name=".ui.AlipayBindActivity" android:label="search activity"></activity>
+
+        <activity android:name=".ui.WechatBindActivity" android:label="search activity"></activity>
+
+
+        <activity android:name=".ui.RevisePasswdActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.RevisePhoneActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.RegisterOrLoginActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.RegisterInivateActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.ResultActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.TwoDimensionScanActivity" android:label="search activity"></activity>
+        <activity android:name=".ui.ReviseNicknameActivity" android:label="search activity"></activity>
+
+        <activity android:name=".ui.SearchSortActivity" android:label="search activity">
+
+        </activity>
+        <activity android:name=".ui.GoodsDetailsActivity" android:label="goods details activity">
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!--集成line客户端登录授权，需要添如下格式的过滤器-->
+            <intent-filter>
+                <data android:scheme="line.1477692153" />
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- ShareSDK<strong>3.1.0版本之前</strong>才需要在MobUIShell下面注册此意图，3.1.0版本之后（包含3.1.0）不需要注册此intent-->
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 填写您从Mob开发者后台中得到的Appkey和AppSecret -->
+        <meta-data android:name="Mob-AppKey" android:value="25b7ddf5c7422"/>
+        <meta-data android:name="Mob-AppSecret" android:value="f220392b421d8b9496155f130e916d00"/>
+
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+</manifest>

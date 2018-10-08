@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Tools.XCRoundImageView
+                    android:id="@+id/goods_one"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    app:srcCompat="@drawable/one1" />
+
+                <TextView
+                    android:id="@+id/goods_one_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="女装" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Tools.XCRoundImageView
+                    android:id="@+id/goods_two"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    app:srcCompat="@drawable/two2" />
+
+                <TextView
+                    android:id="@+id/goods_two_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="母婴" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Tools.XCRoundImageView
+                    android:id="@+id/goods_three"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    app:srcCompat="@drawable/three3" />
+
+                <TextView
+                    android:id="@+id/goods_three_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="美妆" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Tools.XCRoundImageView
+                    android:id="@+id/goods_four"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    app:srcCompat="@drawable/four4" />
+
+                <TextView
+                    android:id="@+id/goods_four_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="家居" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Tools.XCRoundImageView
+                    android:id="@+id/goods_five"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    app:srcCompat="@drawable/five5" />
+
+                <TextView
+                    android:id="@+id/goods_five_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="内衣" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Tools.XCRoundImageView
+                    android:id="@+id/goods_six"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    app:srcCompat="@drawable/six6" />
+
+                <TextView
+                    android:id="@+id/goods_six_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="男装" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Tools.XCRoundImageView
+                    android:id="@+id/goods_seven"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    app:srcCompat="@drawable/seven7" />
+
+                <TextView
+                    android:id="@+id/goods_seven_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="美食" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Tools.XCRoundImageView
+                    android:id="@+id/goods_eight"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    app:srcCompat="@drawable/eight8" />
+
+                <TextView
+                    android:id="@+id/goods_eight_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="数码" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Tools.XCRoundImageView
+                    android:id="@+id/goods_nine"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    app:srcCompat="@drawable/nine9" />
+
+                <TextView
+                    android:id="@+id/goods_nine_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="鞋包" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Tools.XCRoundImageView
+                    android:id="@+id/goods_ten"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    app:srcCompat="@drawable/ten10" />
+
+                <TextView
+                    android:id="@+id/goods_ten_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="其他" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
